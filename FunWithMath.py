@@ -34,7 +34,9 @@ for x in range(1, 6):
 print(acc)
 
 #compute the sum of the first 100 even numbers
-
+for numbers in range(1, 101):
+    if numbers %2 == 0:
+        print(numbers)
 #compute the sum of the first 50 odd numbers
 
 #compute the average of the first 100 odd numbers
