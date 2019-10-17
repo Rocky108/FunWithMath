@@ -38,7 +38,9 @@ for numbers in range(1, 101):
     if numbers %2 == 0:
         print(numbers)
 #compute the sum of the first 50 odd numbers
-
+for numbers in range(0,51):
+    if numbers %2 ==1:
+        print(numbers)
 #compute the average of the first 100 odd numbers
 
 #write a function that returns the average of the first n numbers, where n is a parameter
