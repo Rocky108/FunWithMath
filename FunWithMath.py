@@ -54,3 +54,45 @@ for numbers in range(0,51):
 
 # you may assume n will be greater than or equal to 3.
 
+# montey carlo simulation
+
+import random
+
+print(random.random())
+
+# boolean expressions
+#> greater than
+#>= greater than or equal to
+#< less than
+#<= less than or equal to
+#== the same as
+# != not equal to
+
+dogweight = 25
+print(dogweight != 25)
+catweight=15
+
+#compound boelean operators
+#and
+#or
+#not
+
+print(not catweight < 20)
+
+# decision msking -- selection statements
+
+a= 5
+b=10
+c=75
+
+if a<=b:
+    c=45
+    if b> c:
+        a=25
+    else: a=-25
+else:
+    c= 1050
+    if b==a:
+        c=25
+
+print(c)
