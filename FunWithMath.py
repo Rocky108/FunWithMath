@@ -115,17 +115,48 @@ else:
             ans=75
 print(ans)
 
-def monteyPi(numDarts):
+import turtle
+def showMonteyPi(numDarts):
+
+    scn = turtle.Screen()
+    t = turtle.Turtle()
+
+    scn.setworldcoordinates(-2,-2,2,2)
+
+    t.pu()
+    t.goto(1,0)
+    t.pd()
+    t.goto(-1,0)
+
+    t.pu()
+    t.goto(0,1)
+    t.pd()
+    t.goto(0,-1)
+
     inCircle=0
+    t.pu()
+
     for i in range(numDarts):
         x = random.random()
         y=random.random()
 
         distance= math.sqrt(x**2+y**2)
+        t.goto(x,y)
+
 
         if distance<=1:
             inCircle=inCircle+1
+            t.color("blue")
+        else:
+            t.color("red")
+
+        t.dot()
 
     pi= inCircle / numDarts*4
+    scn.exitonclick()
     return pi
-print(monteyPi(10000))
+showMonteyPi(10000)
+
+#Your Task:
+# modify Modify the simulation to plot points in the entire circle. you will have to adjust
+# the claculated value of pi accordingly
